@@ -20,8 +20,15 @@ const InsertItem = ({ items, setItems }: Props) => {
 
   return (
     <div>
-      <input type="text" value={itemName} onChange={changeItem} />
-      <button onClick={clickButton}>생성</button>
+      <input
+        className="task-input"
+        type="text"
+        value={itemName}
+        onChange={changeItem}
+      />
+      <button className="button-add" onClick={clickButton}>
+        생성
+      </button>
     </div>
   );
 };

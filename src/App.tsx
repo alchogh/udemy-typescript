@@ -7,9 +7,9 @@ import ItemList from "./components/ItemList";
 function App() {
   const [items, setItems] = useState<Item[]>([]);
   return (
-    <div>
-      <div>
-        <div>
+    <div className="container">
+      <div className="app-wrapper">
+        <div className="header">
           <h1>TodoList</h1>
         </div>
         <InsertItem items={items} setItems={setItems} />
